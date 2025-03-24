@@ -1,0 +1,77 @@
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+input {
+    width: 80px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #dd2476, #ff512f);
+}
+
+#resetBtn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+#resetBtn:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+#slotContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#slotContainer span {
+    font-size: 50px;
+    background: #444;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+@keyframes slotSpin {
+    0% { transform: scale(1.2); opacity: 0.5; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.2); opacity: 0.5; }
+}
+
+#menu {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#game {
+    margin-top: 50px;
+}

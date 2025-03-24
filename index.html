@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Oyunu 🎰</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>🎰 Slot Oyunu</h1>
+        <button onclick="startGame()">Oyuna Başla ▶</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h1>Slot Oyunu 🎰</h1>
+        <p>Bakiyeniz: <span id="balance">1000</span> TL</p>
+        <p>Bahis Miktarı: <input type="number" id="betAmount" min="10" step="10"></p>
+        <button onclick="spinSlot()">Çevir 🎰</button>
+        <button id="resetBtn" onclick="resetGame()" style="display:none;">Oyunu Sıfırla 🔄</button>
+        
+        <div id="slotContainer">
+            <span id="slot1">❓</span>
+            <span id="slot2">❓</span>
+            <span id="slot3">❓</span>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <audio id="winSound" src="win.mp3"></audio>
+    <audio id="loseSound" src="lose.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
